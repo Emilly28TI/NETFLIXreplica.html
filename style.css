@@ -1,0 +1,27 @@
+.divPrincipal{
+    width: auto;
+    color:rgba(255, 0, 0, 0.973);
+    align-items: center;
+    font-weight: 400;
+    font-display: optional;
+}
+
+.perfis{
+    width: 20px;
+}
+
+.perfil1{
+    width: 30%;
+}
+
+.perfil2{
+    width: 30px;
+}
+
+.perfil3{
+    width: 30px;
+}
+
+.perfil4{
+    width: 30px;
+}
