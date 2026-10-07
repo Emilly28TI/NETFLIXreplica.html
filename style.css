@@ -25,3 +25,77 @@
 .perfil4{
     width: 30px;
 }
+
+----------------------------------------------------------------------------------------------
+
+body{
+    background-color: rgb(0, 0, 0);
+    min-height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-perfis {
+    display: flex;
+    flex-direction:row; /* Alinha lado a lado */
+    gap: 20px;           /* Cria um espaço opcional entre os perfis */
+  }
+  
+
+.divPrincipal{
+    flex-direction:column;
+    display: flex;
+    width: auto;
+    color:rgba(21, 255, 0, 0.973);
+    align-items: center;
+    font-weight: 400;
+    font-display: optional;
+}
+
+.divPrincipal h1{
+    color: aliceblue;
+    font-family:sans-serif;
+    font-size:50px;
+    font-weight:700;
+
+}
+
+.perfis{
+    width: 20px;
+}
+
+.perfil1{
+    height: 20%;
+    border-radius: 30px;
+    width: 30%;
+    margin: 0%;
+    padding: auto;
+    box-sizing: border-box;
+
+}
+
+.perfil2{
+    border-image: 20px;
+    width: 30px;
+    margin: 0%;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+.perfil3{
+    border-image: 20px;
+    width: 30px;
+    margin: 0%;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+.perfil4{
+    border-image: 20px;
+    width: 30px;
+    margin: 0%;
+    padding: auto;
+    box-sizing: border-box;
+}
