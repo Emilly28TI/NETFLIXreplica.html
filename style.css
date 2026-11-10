@@ -1,115 +1,100 @@
-/*Reset de css - remover configurações padrões do navegador*/
-*{
-    margin: 0; /*margin externa*/
-    padding: 0; /*margin interna*/
-    box-sizing: border-box;/*Remove padroes de box em navegadores*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/*configuração da tag body*/
-body{
-    background-color: rgb(0, 0, 0);/*modifica a cor de fundo da pagina*/
-    min-height: 100vh;/*seleciona 100% da altura da pagina*/
-    display: flex;/*organiza de forma dinamica o conteudo da pagina*/
-    align-items: center;/*alinha os itens centralizando todos eles*/
-    justify-content: center;/*alinhamento central tambem*/
-}
-
-/*Configura a div com a classe divPrincipal vinda do Html*/
-.divPrincipal{
+body {
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;/*orienta como vai ser a direção
-    e destribuição dos elementos/tag 
-    - nesse exemplo em vertical*/
-}
-/*trabalhando com o H1 sendo considerado a logomarca do site*/
-.divPrincipal h1{/*captura o h1 de forma hierarquica no codigo*/
-    color: red;/* modifica a cor da font */
-    font-family: Netflix Font;/*modifica a font em si,
-    trabalhando com estilos de fonte (roboto, arial, times)*/
-    font-size: 50px;/* tamanho da fonte */
-    font-weight: 800;/* peso da fonte, 
-    quanto mais proximo do 900 mais "grossa a fonte"
-    quanto mais distante mais "fina" a fonte */
 }
 
-/*div para organizar a divperfil e o nome acima e o botão abaixo*/
-.divOrganizadora{
-    display: flex; /*organizando de forma dinamica atravez do flex*/
-    align-items: center;/*alinha tudo que esta sendo organizado pelo flex no centro*/
+.divPrincipal {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;/*alinha tudo que esta sendo 
-    organizado pelo flex de forma vertical 
-    sendo um abaixo do outro elemento*/
-    gap: 5px; /*espaçamento seguro dos elementos do flex,
-    nesse caso em forma vertical*/
+    flex-direction: column;
 }
 
-/*configura o h2 dentro da div com classe divOrganizadora*/
-.divOrganizadora h2{
-    color: white; /*modifica a cor da fonte*/
-    font-family: Roboto, sans-serif; /*faz alteração de fonte*/
-    font-size: 20px;/*tamanho da fonte*/
-    font-weight: 600;/*Peso da fonte*/
+.divPrincipal h1 {
+    color: red;
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
 }
 
-/*organiza os perfis de forma horizontal*/
-.boxPerfis{
-    display: flex;/*organiza de forma dinamica os elementos internos*/
-    flex-direction: row;/*modifica a orientação para horizontal(em linha)*/
-    gap: 12px;/*espaço seguro entre os itens*/
-}
-
-/*orienta a imagem o texto exibido no perfil para organiza-los dentro da pagina*/
-.perfil{
-    object-fit: cover;
-    display: flex; /*organizador dinamico*/
-    flex-direction: column; /*orienta os itens em forma de coluna(vertical)*/
-    align-items: center; /*alinha os itens centralizando*/
-    justify-content: center;/*alinha os itens centralizando*/
-    gap: 10px;/*espaçamento seguro entre os itens*/
-}
-
-/*trabalho com a imgem dentro do perfil de forma padrão para todas*/
-.perfil img{
-    object-fit: cover;
-    width: 150px; /*define a largura da imagem*/
-    height: 150px; /*define a altura da imagem*/
-    /* altura e largura iguais deixa a imagem em uma quadrado perfeito*/
-    border-radius: 15px;/*faz o arredondamento da borda da imagem*/
-}
-
-/*configura o ultimo botão (adicionar) para ficar no padrão dos outros botões*/
-.perfil p{
-    object-fit: cover;
-    color: white; /* cor da fonte */
-    width: 150px; /*padroniza altura e largura para ficar igual as outras imagens*/
-    height: 150px;/*padroniza altura e largura para ficar igual as outras imagens*/
-    border-radius: 15px; /*faz o arredondamento da borda da imagem*/
-    background-color: rgba(189, 183, 183, 0.214); /*altera a cor de fundo com base no sistema RGB de cores*/
-    display: flex; /*orienta o conteudo de forma dinamica*/
-    align-items: center; /*centraliza o conteudo */
+.divOrganizadora {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    font-size: 80px;/*tamanho da fonte*/
-    font-weight: 900; /*peso da fonte*/
+    flex-direction: column;
+    gap: 15px;
 }
 
-/*define o tamanho e cor da fonte da tag Small no conteudo da pagina*/
-small{
+.divOrganizadora h2 {
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.boxPerfis {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+.perfil {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.perfil img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.perfil p {
+    color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    background-color: rgba(189, 183, 183, 0.214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.perfil small, .boxPerfis small {
     color: white;
     font-size: 15px;
+    font-family: Roboto, sans-serif;
 }
 
-/*configuação do botão*/
-button{
-    margin-top: 20px;/*separação do elemento que está acima do botão*/
+.divOrganizadora button {
+    margin-top: 20px;
     background-color: rgba(224, 136, 136, 0.472);
     color: white;
-    padding: 8px;
+    padding: 8px 16px;
     border-radius: 5px;
-    cursor: pointer;/*modifica o ponteiro do mouse ao passar por cima do botão*/
+    cursor: pointer;
     font-family: Roboto, sans-serif;
     font-size: 15px;
     font-weight: 300;
+    border: none;
+}
+
+.divOrganizadora button:hover {
+    background-color: rgba(224, 136, 136, 0.8);
 }
