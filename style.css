@@ -26,7 +26,7 @@ body{
 /*trabalhando com o H1 sendo considerado a logomarca do site*/
 .divPrincipal h1{/*captura o h1 de forma hierarquica no codigo*/
     color: red;/* modifica a cor da font */
-    font-family: Netflix Font, sans-serif;/*modifica a font em si,
+    font-family: Netflix Font;/*modifica a font em si,
     trabalhando com estilos de fonte (roboto, arial, times)*/
     font-size: 50px;/* tamanho da fonte */
     font-weight: 800;/* peso da fonte, 
@@ -113,4 +113,3 @@ button{
     font-size: 15px;
     font-weight: 300;
 }
-
