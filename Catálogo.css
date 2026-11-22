@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #141414;
+    font-family: Roboto, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: linear-gradient(90deg, rgba(20,0,3,1) 0%, rgba(153,5,0,1) 40%, rgba(196,0,0,1) 49%, rgba(46,0,0,1) 100%);
+}
+
+header h1{
+    color: #ff0000;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.menu a:hover{
+    color: #ff4d4d;
+    text-decoration: underline;
+}
+
+/* BANNER GERAL */
+.sectionBanner{
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+.sectionBanner::after{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to top, #141414 0%, rgba(20,20,20,0.5) 50%, rgba(20,20,20,0.1) 100%);
+}
+
+.banner-apocalipse{
+    background-image: url(https://occ-0-2219-2218.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABSO8K6mHbzd0DB4jLBB1MbHWXsQaCWyt2zozs8fankMtx72VbCnvzgEdOl9CP29jnYmIwpLEg_7PHFh-ymq-nOmuYXKPV88eDWq9.jpg?r=9a7);
+}
+
+.banner-dez{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Moses_with_the_Ten_Commandments.jpg/800px-Moses_with_the_Ten_Commandments.jpg);
+}
+
+.banner-genesis{
+    background-image: url(https://upload.wikimedia.org/wikipedia/pt/e/e1/G%C3%AAnesis_logo.jpeg);
+}
+
+.banner{
+    max-width: 550px;
+    z-index: 2;
+}
+
+.banner h2{
+    font-size: 60px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.banner p{
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.buton{
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-right: 8px;
+    border: none;
+}
+
+.buton-play{
+    background-color: #cc1400;
+    color: #fff;
+}
+
+.buton-info{
+    background-color: rgba(125,125,125,0.7);
+    color: white;
+}
+
+.buton:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* LISTA DE FILMES */
+.sectionFilmes{
+    padding: 30px 40px;
+}
+
+.organizadorFilmes h2{
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.listaFilmes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cardFilme{
+    width: 180px;
+    text-decoration: none;
+    color: white;
+}
+
+.cardFilme img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    background-color: #222;
+}
+
+.cardFilme p{
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.cardFilme:hover img{
+    transform: scale(1.05);
+    box-shadow: -13px 14px 15px 1px rgba(242,191,120,0.58);
+}
+
+/* PÁGINA DE DETALHE */
+.sectionInfoDetalhe{
+    padding: 30px 40px;
+    color: white;
+    max-width: 800px;
+}
+
+.fichatecnica{
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #e6c07a;
+}
+
+.sinopse{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.butaoVoltar{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+
+.butaoVoltar:hover{
+    background-color: white;
+    color: black;
+}
